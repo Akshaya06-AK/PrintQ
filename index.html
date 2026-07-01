@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PrintQ - Smart Campus Printing</title>
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="hero">
+        <nav>
+          <div class="brand">
+            <span class="brand-mark">PQ</span>
+            <div>
+              <strong>PrintQ</strong>
+              <small>Smart Campus Printing</small>
+            </div>
+          </div>
+          <div class="role-tabs">
+            <button class="active" data-role="student">Student</button>
+            <button data-role="shop">Print Shop</button>
+            <button data-role="admin">Admin</button>
+          </div>
+        </nav>
+
+        <section class="hero-grid">
+          <div>
+            <p class="eyebrow">AI-enabled queue and pickup system</p>
+            <h1>No more standing 40 minutes for one print.</h1>
+            <p class="hero-copy">Upload documents, pay through campus wallet, track live queue, and collect prints with a QR token.</p>
+            <div class="hero-actions">
+              <button data-role-jump="student">Book Print</button>
+              <button class="ghost" data-role-jump="shop">Open Shop Board</button>
+            </div>
+          </div>
+          <div class="live-ticket" id="liveTicket"></div>
+        </section>
+      </header>
+
+      <main>
+        <section class="metrics" id="metrics"></section>
+        <p class="notice" id="notice">Ready for new print orders</p>
+        <section id="view"></section>
+      </main>
+    </div>
+    <script type="module" src="/src/app.js"></script>
+  </body>
+</html>
